@@ -13,11 +13,11 @@ export default class NavBottom extends React.Component{
                 <Icon type="home"/>
                 <span>首页</span>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="/order">
                 <Icon type="exception"/>
                 <span>订单</span>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="/person">
                 <Icon type="user"/>
                 <span>我的</span>
             </NavLink>
