@@ -1,8 +1,11 @@
 import React from 'react';
+
 import {connect} from 'react-redux';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
-import
+import List from './menu/List';
+import Info from './menu/Info';
+
 import '../static/css/course.less';
 
 export default class Home extends React.Component {
