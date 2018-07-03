@@ -9,7 +9,7 @@ export default class NavBottom extends React.Component{
 
     render(){
         return <section className="footerBox">
-            <NavLink to="home">
+            <NavLink to="/home">
                 <Icon type="home"/>
                 <span>首页</span>
             </NavLink>
