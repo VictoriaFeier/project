@@ -1,0 +1,99 @@
+.detailBox{
+  position: relative;
+  width: 100%;
+  padding-right: .05rem;
+  .detailTop{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background: #D5D5D5;
+    text-align: center;
+    i{
+      font-size: .6rem;
+      position: absolute;
+      left: .1rem;
+      top: 20%;
+    }
+    span{
+      font-size: .4rem;
+
+    }
+  }
+  .detailBody{
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: .1rem;
+    position: absolute;
+    top: 1rem;
+    h3{
+      color: #f01414;
+      font-size: .4rem;
+      margin-left: .1rem;
+    }
+    .shoppingList{
+      width: 100%;
+      .shoppingLeft{
+        width: 20%;
+        float: left;
+        background: #f3f5f7;
+        padding: 0 .1rem;
+        margin-right: .1rem;
+        li{
+          height: 1.14rem;
+          line-height: 1.14rem;
+          text-align: center;
+          font-size: .3rem;
+          border-bottom: .01rem solid #cccccc;
+        }
+      }
+      .shoppingRight{
+        li{
+          padding: .1rem;
+          border-bottom: .01rem solid gainsboro;
+          img{
+            width: 1.14rem;
+            height: 1.14rem;
+            background: pink;
+            float: left;
+            margin-right: .1rem;
+          }
+          .right{
+            h4{
+              font-size: .3rem;
+              margin: 0;
+            }
+            span{
+              font-size: .3rem;
+            }
+            i{
+              font-style: normal;
+              display: block;
+              color: red;
+            }
+            .btn{
+              position: relative;
+              right: -4.6rem;
+              top: -0.4rem;
+              button{
+                width: .4rem;
+                height: .4rem;
+                line-height: .4rem;
+                text-align: center;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background: #00a0dc;
+                border: none;
+                color: #fff;
+                font-size: .3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,9 +14,11 @@ import './static/css/common.less';
 
 import Home from "./routes/Home";
 import Person from "./routes/Person";
+import Order from "./routes/Order";
 import NavBottom from "./component/NavBottom";
 
-
+/*测试所需组件导入*/
+import Detail from "./routes/list/Detail"
 ReactDOM.render(
     <HashRouter>
         <LocaleProvider locale={zh_CN}>
@@ -25,10 +27,12 @@ ReactDOM.render(
                 <main className='container'>
                     <Switch>
                         <Route path="/home" component={Home}/>
+                        <Route path="/order" component={Order}/>
                         <Route path="/person" component={Person}/>
+                        <Route path="/detail" component={Detail}/>
+                        {/*<Redirect to="/home"/>*/}
                     </Switch>
                 </main>
-
                 {/*FOOTER*/}
                 <NavBottom/>
             </div>
