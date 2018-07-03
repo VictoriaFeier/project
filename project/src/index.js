@@ -8,6 +8,7 @@ import Home from "./routes/Home";
 
 /*导入公共样式*/
 import "./static/css/reset.min.css";
+import "./static/css/common.less";
 
 
 ReactDOM.render(
