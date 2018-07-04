@@ -1,28 +1,20 @@
 import React from 'react';
-import '../static/css/person.less';
 import {connect} from 'react-redux';
 import {Icon} from 'antd';
-import Tip from './person/Tip';
-import Register from './person/Register';
-import Info from './person/Info';
-import Login from './person/Login';
-import {Switch,Route,Redirect} from 'react-router-dom';
-
-
-class Person extends React.Component{
-    constructor(props){
-        super(props);
+// import {withRouter} from 'react-router-dom';
+class Tip extends React.Component{
+    constructor(props,context){
+        super(props,context);
     }
-
     render(){
-        /*return <div className={'personCenter'}>
-              <div className={'personCenter-header'}>
-                    <h3>
-                        <Icon type="user" />
-                        <span>请登录</span>
-                        <Icon type="right" />
-                    </h3>
-              </div>
+        return <div className={'personCenter'}>
+            <div className={'personCenter-header'}>
+                <h3>
+                    <Icon type="user" />
+                    <span>请登录</span>
+                    <Icon type="right" />
+                </h3>
+            </div>
             <div className={'personCenter-collect'}>
                 <ul className={'collectList'}>
                     <li className={'person-myCollect'}>
@@ -94,7 +86,7 @@ class Person extends React.Component{
                     </ul>
                 </div>
             </div>
-            {/!*refer*!/}
+            {/*refer*/}
             <div className={'personMore-refer'}>
                 <div className={'moreRefer'}>
                     <h3>更多推荐</h3>
@@ -115,27 +107,17 @@ class Person extends React.Component{
                             <Icon type="dribbble" />
                             <span>骑手招募</span>
                         </li>
-                      {/!*  <li>
+                        {/*  <li>
                             <Icon type="usergroup-add" />
                             <span>我要合作</span>
-                        </li>*!/}
+                        </li>*/}
                     </ul>
                 </div>
             </div>
 
 
 
-        </div>*/
-        return <section>
-            <Switch>
-                <Route path='/person/tip' component={Tip}/>
-                <Route path='/person/info' component={Info}/>
-                <Route path='/person/login' component={Login}/>
-                <Route path='/person/register' component={Register}/>
-                <Redirect from='/person' to='/person/tip'/>
-            </Switch>
-        </section>
+        </div>
     }
 }
-
-export default connect()(Person);
+export default connect()(Tip);
