@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0e312cd-9d2c-4bc4-b6ea-3fc340a12ac0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/Detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/Home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/Order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/detail/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/home/List.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/home/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/order/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/routes/person/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action/detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/action/person.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KETANG/src/store/reducer/person.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/api/list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/routes/list/List.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/static/images/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/static/images/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/static/images/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/static/images/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/src/static/images/5.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/.gitignore" afterPath="$PROJECT_DIR$/KETANG/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/env.js" afterPath="$PROJECT_DIR$/KETANG/config/env.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/jest/cssTransform.js" afterPath="$PROJECT_DIR$/KETANG/config/jest/cssTransform.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/jest/fileTransform.js" afterPath="$PROJECT_DIR$/KETANG/config/jest/fileTransform.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/paths.js" afterPath="$PROJECT_DIR$/KETANG/config/paths.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/polyfills.js" afterPath="$PROJECT_DIR$/KETANG/config/polyfills.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/webpack.config.dev.js" afterPath="$PROJECT_DIR$/KETANG/config/webpack.config.dev.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/webpack.config.prod.js" afterPath="$PROJECT_DIR$/KETANG/config/webpack.config.prod.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/config/webpackDevServer.config.js" afterPath="$PROJECT_DIR$/KETANG/config/webpackDevServer.config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/package.json" afterPath="$PROJECT_DIR$/KETANG/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/public/index.html" afterPath="$PROJECT_DIR$/KETANG/public/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/scripts/build.js" afterPath="$PROJECT_DIR$/KETANG/scripts/build.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/scripts/start.js" afterPath="$PROJECT_DIR$/KETANG/scripts/start.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/scripts/test.js" afterPath="$PROJECT_DIR$/KETANG/scripts/test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/api/index.js" afterPath="$PROJECT_DIR$/KETANG/src/api/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/component/NavBottom.js" afterPath="$PROJECT_DIR$/KETANG/src/component/NavBottom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/routes/Person.js" afterPath="$PROJECT_DIR$/KETANG/src/routes/Person.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/static/css/common.less" afterPath="$PROJECT_DIR$/KETANG/src/static/css/common.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/static/css/reset.min.css" afterPath="$PROJECT_DIR$/KETANG/src/static/css/reset.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/store/action-types.js" afterPath="$PROJECT_DIR$/KETANG/src/api/detail.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/store/action/index.js" afterPath="$PROJECT_DIR$/KETANG/src/api/home.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/store/index.js" afterPath="$PROJECT_DIR$/KETANG/src/api/login.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/src/store/reducer/index.js" afterPath="$PROJECT_DIR$/KETANG/src/api/order.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project/yarn.lock" afterPath="$PROJECT_DIR$/KETANG/yarn.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/index.js" afterPath="$PROJECT_DIR$/project/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/routes/Home.js" afterPath="$PROJECT_DIR$/project/src/routes/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/routes/Order.js" afterPath="$PROJECT_DIR$/project/src/routes/Order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/static/css/home.less" afterPath="$PROJECT_DIR$/project/src/static/css/home.less" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="List.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KETANG/src/routes/home/List.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3033708">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="e#1348#2028#0" expanded="false" />
                 <element signature="e#1592#2003#0" expanded="false" />
@@ -105,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KETANG/src/store/action/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.185185">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.42281878">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KETANG/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -382,7 +335,7 @@
     <frame x="0" y="22" width="1186" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.026609441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08497854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -625,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KETANG/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Person.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -768,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KETANG/src/store/reducer/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KETANG/src/routes/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -784,10 +722,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KETANG/src/store/action/home.js">
+    <entry file="file://$PROJECT_DIR$/KETANG/src/routes/home/List.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.185185">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#1348#2028#0" expanded="false" />
+            <element signature="e#1592#2003#0" expanded="false" />
+            <element signature="e#2068#3579#0" expanded="false" />
+            <element signature="e#5636#12320#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KETANG/src/store/reducer/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -800,16 +751,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KETANG/src/routes/home/List.js">
+    <entry file="file://$PROJECT_DIR$/KETANG/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3033708">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#1348#2028#0" expanded="false" />
-            <element signature="e#1592#2003#0" expanded="false" />
-            <element signature="e#2068#3579#0" expanded="false" />
-            <element signature="e#5636#12320#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KETANG/src/store/action/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42281878">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
