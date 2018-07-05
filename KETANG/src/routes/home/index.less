@@ -23,20 +23,20 @@
     }
 
     //=>分类
-    .sort{
+    .sort {
       margin-top: .3rem;
-      border-bottom: .3rem solid rgba(0,0,0,.05);
-      &:after{
+      border-bottom: .3rem solid rgba(0, 0, 0, .05);
+      &:after {
         display: block;
         content: "";
         clear: both;
       }
-      li{
-        float:left;
+      li {
+        float: left;
         width: 25%;
         text-align: center;
-        padding-top:.1rem;
-        img{
+        padding-top: .1rem;
+        img {
           display: block;
           width: 50%;
           height: 50%;
@@ -46,13 +46,13 @@
     }
 
     //=>商家列表
-    .moreSeller{
-      padding-bottom:1.3rem;
+    .moreSeller {
+      padding-bottom: 1.3rem;
       h2 {
         color: #595959;
         font-weight: bold;
         margin: .5rem 0 0 .3rem;
-        font-size:.4rem;
+        font-size: .4rem;
       }
 
       .sellerList {
@@ -68,7 +68,7 @@
           }
           .sellerRight {
             float: right;
-            width:4.5rem;
+            width: 4.5rem;
             margin-right: .5rem;
             color: #595959;
             h3 {
@@ -85,33 +85,36 @@
               &:nth-of-type(8) {
                 margin-left: .2rem;
               }
-
             }
-            .star{
+            .star {
               color: #F3C14D;
             }
-            p{
+            p {
               overflow: hidden;
               white-space: nowrap;
               text-overflow: ellipsis;
-              margin-top:.2rem;
+              margin-top: .2rem;
 
-              .piao{
-                margin-top:.06rem;
-                width:.3rem;
-                margin-left:0rem;
+              .piao {
+                margin-top: .06rem;
+                width: .3rem;
+                margin-left: 0rem;
               }
-
             }
           }
 
         }
       }
-      button {
-        display: block;
-        margin: 0 auto;
-        border-color:#fff;
+      .noMore {
+        text-align: center;
+        button {
+          display: block;
+          margin: 0 auto;
+          border-color: #fff;
+          color: #3490F3;
+        }
       }
+
     }
   }
 }

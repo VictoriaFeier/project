@@ -3,7 +3,6 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="JSX" />
   </component>
-<<<<<<< HEAD
   <component name="JsBowerSettings">
     <exe-path />
     <config-path />
@@ -52,6 +51,4 @@
       </state>
     </states>
   </component>
-=======
->>>>>>> a0ac2751077a9273db4c60839c313976f3eff926
 </project>
