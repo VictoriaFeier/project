@@ -34,7 +34,7 @@ ReactDOM.render(
                             <Route path="/home" component={Home}/>
                             <Route path="/order" component={Order}/>
                             <Route path="/person" component={Person}/>
-                            <Route path="/seller/:sellerId" component={Person}/>
+                            {/*<Route path="/seller/:sellerId" component={Person}/>*/}
                             <Redirect to='/?lx=404'/>
                         </Switch>
                     </main>

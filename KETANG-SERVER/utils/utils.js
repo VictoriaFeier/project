@@ -1,7 +1,23 @@
 const {writeFile} = require('../utils/promiseFS'),
-    STORE_PATH = './json/store.json';
+    PERSONAL_PATH = './json/personal.json';
 
-function ADD_STORE(req, res, courseID) {
+function ADD_STORE(req, res, cat) {
+    const personID = req.session.personID;
+    if (personID) {
+        let personIndex = req.personalDATA.findIndex(item => {
+            return parseFloat(item.id) === personID;
+        });
+        if(personIndex>-1){
+            req.personalDATA[personIndex]["cat"] = cat;
+
+            //writeFile...
+            writeFile(PERSONAL_PATH, req.personalDATA);
+        }
+    }
+
+/*
+
+
     //=>把某一个商品存储到JSON中，实现加入购物车的功能
     let personID = req.session.personID,
         storeInfo = {
@@ -13,7 +29,7 @@ function ADD_STORE(req, res, courseID) {
         };
     //=>把数据先存放到原始数组中，最后把原始数组写入到JSON中永久保存
     req.storeDATA.push(storeInfo);
-    return writeFile(STORE_PATH, req.storeDATA);
+    return writeFile(STORE_PATH, req.storeDATA);*/
 }
 
 module.exports = {
