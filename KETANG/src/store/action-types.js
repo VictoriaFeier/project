@@ -9,3 +9,4 @@ export const GET_HOME_LIST_DATA = "GET_HOME_LIST_DATA";
 
 
 //注册&登录
+export const QUERY_USER_INFO = 'QUERY_USER_INFO';

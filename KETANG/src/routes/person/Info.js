@@ -14,7 +14,7 @@ class Info extends React.Component{
                 <h3>
                     <Icon type="user" />
                     <span>用户名：</span>
-                    <span>123</span>
+                    <span></span>
                     <Icon type="setting" />
                 </h3>
             </div>
@@ -117,6 +117,7 @@ class Info extends React.Component{
                     </ul>
                 </div>
             </div>
+            <button>退出登录</button>
         </div>;
     }
 }
