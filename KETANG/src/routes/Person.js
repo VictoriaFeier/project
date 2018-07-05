@@ -15,10 +15,11 @@ class Person extends React.Component{
 
         return <section>
             <Switch>
-                <Route path='/person' component={Tip}/>
-                {/*<Route path='/person/info' component={Info}/>*/}
-                {/*<Route path='/person/login' component={Login}/>
-                <Route path='/person/register' component={Register}/>*/}
+                <Route path='/person' exact component={Tip}/>
+             <Route path='/person/login' component={Login}/>
+                <Route path='/person/register' component={Register}/>
+                <Route path='/person/info' component={Info}/>
+
                 {/*<Redirect from='/person' to='/person/tip'/>*/}
             </Switch>
         </section>

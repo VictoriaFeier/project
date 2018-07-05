@@ -1,48 +1,50 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Icon} from 'antd';
-// import {withRouter} from 'react-router-dom';
+import {withRouter,Link} from 'react-router-dom';
+import Login from './Login.js';
+import Info from './Info.js';
 class Tip extends React.Component{
     constructor(props,context){
         super(props,context);
     }
     render(){
         return <div className={'personCenter'}>
-            <div className={'personCenter-header'}>
-                <h3>
-                    <Icon type="user" />
-                    <span >请登录</span>
-                    <Icon type="right" />
-                </h3>
-            </div>
-            <div className={'personCenter-collect'}>
-                <ul className={'collectList'}>
-                    <li className={'person-myCollect'}>
-                        <Icon type="book" />
-                        <span>我的收藏</span>
-                    </li>
-                    <li className={'person-myCollect'}>
-                        <Icon type="flag" />
-                        <span>我的足迹</span>
-                    </li>
-                    <li className={'person-myCollect'}>
-                        <Icon type="like-o" />
-                        <span>我的评价</span>
-                    </li>
-                    <li className={'person-myCollect'}>
-                        <Icon type="team" />
-                        <span>我的好友</span>
-                    </li>
-                    <li className={'person-myCollect'}>
-                        <Icon type="solution" />
-                        <span>答谢记录</span>
-                    </li>
-                    <li className={'person-myCollect'}>
-                        <Icon type="environment-o" />
-                        <span>我的地址</span>
-                    </li>
-                </ul>
-            </div>
+                    <div className={'personCenter-header'}>
+                        <h3>
+                            <Icon type="user" />
+                            <Link className='pleaceLogin' to='/person/login'>请登录</Link>
+                            <Link to='/person/info'> <Icon type="setting" /></Link>
+                            </h3>
+                    </div>
+                <div className={'personCenter-collect'}>
+                    <ul className={'collectList'}>
+                        <li className={'person-myCollect'}>
+                            <Icon type="book" />
+                            <span>我的收藏</span>
+                        </li>
+                        <li className={'person-myCollect'}>
+                            <Icon type="flag" />
+                            <span>我的足迹</span>
+                        </li>
+                        <li className={'person-myCollect'}>
+                            <Icon type="like-o" />
+                            <span>我的评价</span>
+                        </li>
+                        <li className={'person-myCollect'}>
+                            <Icon type="team" />
+                            <span>我的好友</span>
+                        </li>
+                        <li className={'person-myCollect'}>
+                            <Icon type="solution" />
+                            <span>答谢记录</span>
+                        </li>
+                        <li className={'person-myCollect'}>
+                            <Icon type="environment-o" />
+                            <span>我的地址</span>
+                        </li>
+                    </ul>
+                </div>
             <div className={'personCenter-asset'}>
                 <div className={'personCenter-myAsset'}>
                     <h3>我的资产</h3>
@@ -114,10 +116,7 @@ class Tip extends React.Component{
                     </ul>
                 </div>
             </div>
-
-
-
-        </div>
+        </div>;
     }
 }
-export default connect()(Tip);
+export default withRouter(connect()(Tip));
