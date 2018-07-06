@@ -14,3 +14,7 @@ export function submissionCatData(data) {
 export function submissionOrderData(data) {
     //.....
 }
+
+export function getDeatilData() {
+    return axios.get("/seller/info?sellerID=1");
+}
