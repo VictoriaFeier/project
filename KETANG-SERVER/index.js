@@ -27,7 +27,7 @@ app.use(session(CONFIG.session));
 
 //=>把所有POST请求，请求主体传递的内容进行解析，把URL-ENCODED格式转换为对象，存放到REQ.BODY属性上的
 const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //=>在所有的请求开始之前，把JSON中的数据获取到，挂载到REQ的某些属性上，以后想获取，直接的从属性读取即可
@@ -42,8 +42,8 @@ app.use(async (req, res, next) => {
 /*-ROUTE-*/
 //=>EXPRESS中的路由管控，例如：请求的API接口地址是 '/personal/xxx' ，直接进入到 './routes/personal' 这个模块执行代码
 app.use('/seller', require('./routes/seller'));
-// app.use('/personal', require('./routes/personal'));
-// app.use('/order', require('./routes/order'));
+app.use('/personal', require('./routes/personal'));
+app.use('/order', require('./routes/order'));
 app.use((req, res, next) => {
     res.status(404);
     res.send('NOT FOUND!');

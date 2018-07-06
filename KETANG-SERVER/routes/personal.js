@@ -6,15 +6,16 @@ const express = require('express'),
 
 //=>把临时存储在SESSION中的STORE信息，增加到JSON文件中（登录后）
 function add_temp_store(req, res) {
-    let storeList = req.session.storeList || [];
-    if (storeList.length === 0) return;
-    storeList.map(item => {
+    let cat = req.session.cat || {};
+    if (Object.getOwnPropertyNames(cat).length === 0) return;
+    utils.ADD_STORE(req, res, req.session.cat)
+    /*storeList.map(item => {
         return utils.ADD_STORE(req, res, parseFloat(item));
     });
     Promise.all(storeList).then(() => {
         //...
-    });
-    req.session.storeList = [];
+    });*/
+    req.session.cat = {};
 }
 
 route.post('/login', (req, res) => {
@@ -55,7 +56,8 @@ route.post('/register', (req, res) => {
         name: '',
         email: '',
         phone: '',
-        password: '8376ac810bb9f231d28fcf1f'
+        password: '8376ac810bb9f231d28fcf1f',
+        cat:null
     };
     //=>把用户传递的密码二次加密
     req.body.password = req.body.password.substr(4, 24).split('').reverse().join('');

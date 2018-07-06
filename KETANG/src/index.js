@@ -36,8 +36,12 @@ ReactDOM.render(
                             <Route path="/home" component={Home}/>
                             <Route path="/order" component={Order}/>
                             <Route path="/person" component={Person}/>
+<<<<<<< HEAD
                             <Route path="/seller/detail" component={DetailInfo}/>
                             <Route path="/seller/:sellerID" component={Detail}/>
+=======
+                            {/*<Route path="/seller/:sellerId" component={Person}/>*/}
+>>>>>>> 1ee465dc48dfc462712d3a29fe069ce4cb4f9ad4
                             <Redirect to='/?lx=404'/>
                         </Switch>
                     </main>

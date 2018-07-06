@@ -16,6 +16,22 @@ route.get('/banner', (req, res) => {
 });
 
 route.get('/info', (req, res) => {
+    let cat = null;
+    let personID = req.session.personID;
+    if (personID) {
+        let personInfo = req.personalDATA.find(item => {
+            return parseFloat(item.id) === personID;
+        });
+        cat = personInfo.cat;
+    }else{
+        req.session.cat ? cat = req.session.cat : null;
+    }
+
+    if(!cat||Object.getOwnPropertyNames(cat).length === 0){
+        cat = null;
+    }
+
+
     //=>客户端会传一个课程ID进来，我们在所有课程中找到和ID相同的信息，返回
     let {sellerID} = req.query;//=>GET请求问号传递信息都在REQ.QUERY上呢
     sellerID = parseFloat(sellerID);
@@ -26,6 +42,7 @@ route.get('/info', (req, res) => {
         res.send({
             code: 0,
             msg: 'OK!',
+            cat: cat,
             data: item
         });
         return;
@@ -38,6 +55,22 @@ route.get('/info', (req, res) => {
 });
 
 route.get('/list', (req, res) => {
+    let cat = null;
+    let personID = req.session.personID;
+    if (personID) {
+        let personInfo = req.personalDATA.find(item => {
+            return parseFloat(item.id) === personID;
+        });
+        cat = personInfo.cat;
+    }else{
+        req.session.cat ? cat = req.session.cat : null;
+    }
+
+    if(!cat||Object.getOwnPropertyNames(cat).length === 0){
+        cat = null;
+    }
+
+
     //=>接收客户端传递的参数值，不传的给默认值：limit每页展示条数，page是第几页，type是筛选的类型
     let {limit = 10, page = 1} = req.query;
     limit = parseFloat(limit);
@@ -68,6 +101,7 @@ route.get('/list', (req, res) => {
         total,
         limit,
         page,
+        cat,
         data: result
     });
 });
