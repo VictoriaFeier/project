@@ -112,7 +112,11 @@ class List extends React.Component {
                             return <li className="clearfix" key={index}>
                                 <Link to={{pathname:'/home/list',
                         search:`?listId=${item.id}`}}>
-                                    <img src={item.seller.avatar} alt=""/>
+                                    <div className="sellerLeft"><img src={item.seller.avatar} alt=""/>
+                                        {this.props.cat[item.id]?<span>{this.props.cat[item.id]["totalNum"]}</span>:
+                                            null}
+                                    </div>
+
                                     <div className="sellerRight">
                                         <h3>{item.seller.name}</h3>
                             <span className="star">
@@ -154,4 +158,4 @@ class List extends React.Component {
     }
 }
 
-export default connect(state => ({...state.home}), action.home)(List);
+export default connect(state => ({...state.home,...state.detail}), action.home)(List);

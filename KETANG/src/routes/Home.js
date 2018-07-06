@@ -12,6 +12,7 @@ import './home/index.less';
 class Home extends React.Component{
 		componentWillMount(){
 			//获取数据
+
 		}
     render(){
         return <section className="homeBox">
