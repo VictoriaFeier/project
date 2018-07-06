@@ -71,7 +71,28 @@ class ShopCart extends React.Component{
                                <span>￥{item.price}</span>
                            </div>
                             <div className="btn">
-                                <button >-</button>
+                                <button onClick={ev=>{
+                                    // this.props.addGoods();
+                                    if(this.info.totalNum>0){
+                                        this.info.totalNum--;
+                                    }
+                                    this.info.totalPrice+=parseFloat(item.price);
+                                    let tempIndex= this.info.type.findIndex((key,index)=>{
+                                        return key.name===item.name;
+                                    });
+                                    if(tempIndex>-1){
+                                        this.info.type[tempIndex]["num"]--;
+                                    }else{
+                                        this.info.type.push({
+                                            name:item.name,
+                                            price:item.price,
+                                            num:1
+                                        })
+                                    }
+                                    this.props.getDetailCar({id:this.sellerId,info:this.info});
+
+
+                                }}>-</button>
                                 <span>&nbsp;{item.num}&nbsp;</span>
                                 <button onClick={ev=>{
                                     // this.props.addGoods();
