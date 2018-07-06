@@ -19,6 +19,8 @@ import Person from "./routes/Person";
 import Order from "./routes/Order";
 import Detail from "./routes/Detail";
 
+/*自己测试组件*/
+import DetailInfo from "./routes/detail/DetailInfo";
 /*基础组件*/
 import NavBottom from "./component/NavBottom";
 
@@ -34,13 +36,13 @@ ReactDOM.render(
                             <Route path="/home" component={Home}/>
                             <Route path="/order" component={Order}/>
                             <Route path="/person" component={Person}/>
-                            <Route path="/seller/:sellerId" component={Person}/>
+                            <Route path="/seller/detail" component={DetailInfo}/>
+                            <Route path="/seller/:sellerID" component={Detail}/>
                             <Redirect to='/?lx=404'/>
                         </Switch>
                     </main>
-
                     {/*FOOTER*/}
-                    <NavBottom/>
+                    {/*<NavBottom/>*/}
                 </div>
             </LocaleProvider>
         </HashRouter>
