@@ -2,19 +2,28 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Icon} from 'antd';
 import {withRouter,Link} from 'react-router-dom';
+import {queryInfo,exitLogin} from "../../api/person";
 import Login from './Login.js';
 
 class Info extends React.Component{
     constructor(props,context){
         super(props,context);
+        this.state={
+            name:""
+        };
+    }
+    async componentDidMount(){
+        let res = await queryInfo();
+
+        this.setState({name:res.data.name});
     }
     render(){
         return <div className={'personCenter'}>
             <div className={'personCenter-header'}>
                 <h3>
                     <Icon type="user" />
-                    <span>用户名：</span>
-                    <span></span>
+
+                    <span>{this.state.name}</span>
                     <Icon type="setting" />
                 </h3>
             </div>
@@ -73,7 +82,7 @@ class Info extends React.Component{
                     </ul>
                 </div>
             </div>
-            <div className={'personCenter-server'}>
+           {/* <div className={'personCenter-server'}>
                 <div className={'personCenter-myServer'}>
                     <h3>我的服务</h3>
                     <ul className={'person-myServerList'}>
@@ -88,7 +97,7 @@ class Info extends React.Component{
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>*/}
             {/*refer*/}
             <div className={'personMore-refer'}>
                 <div className={'moreRefer'}>
@@ -110,14 +119,21 @@ class Info extends React.Component{
                             <Icon type="dribbble" />
                             <span>骑手招募</span>
                         </li>
-                        {/*  <li>
-                            <Icon type="usergroup-add" />
-                            <span>我要合作</span>
-                        </li>*/}
+
                     </ul>
                 </div>
             </div>
-            <button>退出登录</button>
+            <div className={'info-quit'}>
+
+                <button onClick={async ()=>{
+                    let res = await exitLogin();
+                    if(res.code == 0){
+                        //修改redux里的isLogin
+                        this.props.change(false);
+                        this.props.history.push("/person");
+                    }
+                }}>退出登录</button>
+            </div>
         </div>;
     }
 }

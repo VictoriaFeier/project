@@ -1,10 +1,22 @@
 import * as TYPES from "../action-types";
-import { queryInfo} from '../../api/person';
+import {queryInfo,checkLogin} from '../../api/person';
 let person = {
-    queryUserInfo() {
+    queryBaseInfo() {
         return {
-            type: TYPES.QUERY_USER_INFO,
+            type: TYPES.PERSON_QUERY_BASE,
             payload: queryInfo()
+        };
+    },
+    getPersonLoginInfoAPI(){
+        return {
+            type: TYPES.GET_PERSON_LOGIN_INFO,
+            payload: checkLogin()
+        };
+    },
+    changePersonLoginInfo(val){
+        return {
+            type:TYPES.CHANGE_PERSON_LOGIN_INFO,
+            val
         };
     }
 };

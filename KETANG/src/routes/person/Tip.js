@@ -10,17 +10,18 @@ class Tip extends React.Component{
         super(props,context);
     }
     async componentWillMount(){
-        this.props.queryUserInfo();
+        this.props.queryBaseInfo();
     }
 
     render(){
             let {userInfo}=this.props;
         return <div className={'personCenter'}>
+
                     <div className={'personCenter-header'}>
                             <h3>
                                 <Icon type="user" />
                                 <Link className='pleaceLogin' to='/person/login'>请登录</Link>
-                                <Link to='/person/info'> <Icon type="setting" /></Link>
+
                             </h3>
                        {/* {userInfo ? <span>{userInfo.name}</span> : <Link to={'/person/login'}>
                             <span>您还未登录！点此登录...</span>
@@ -81,7 +82,7 @@ class Tip extends React.Component{
                     </ul>
                 </div>
             </div>
-            <div className={'personCenter-server'}>
+          {/*  <div className={'personCenter-server'}>
                 <div className={'personCenter-myServer'}>
                     <h3>我的服务</h3>
                     <ul className={'person-myServerList'}>
@@ -96,7 +97,7 @@ class Tip extends React.Component{
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>*/}
             {/*refer*/}
             <div className={'personMore-refer'}>
                 <div className={'moreRefer'}>

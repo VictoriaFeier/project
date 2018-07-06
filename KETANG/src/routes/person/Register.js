@@ -4,6 +4,7 @@ import {Form, Icon, Button, Input, Row, Col, Modal} from 'antd';
 import md5 from 'blueimp-md5';
 import {register} from '../../api/person';
 import action from '../../store/action/index';
+import {Link} from 'react-router-dom';
 
 const FormItem = Form.Item;
 
@@ -24,10 +25,11 @@ class Register extends React.Component {
         ev.preventDefault();
         this.props.form.validateFieldsAndScroll(async (err, values) => {
             if (!err) {
+                console.log(values.password);
                 values.password = md5(values.password);
                 let result = await register(values);
                 if (parseFloat(result.code) === 0) {
-                    this.props.queryInfo();
+                    this.props.queryBaseInfo();
                     this.props.history.push('/person');
                     return;
                 }
@@ -50,44 +52,51 @@ class Register extends React.Component {
         };
 
         return <section className='personLoginBox'>
-            <Form onSubmit={this.handleSubmit}>
-                <FormItem {...formItemLayout} label='用户名'>
-                    {getFieldDecorator('name', {
-                        rules: [
-                            {required: true, message: '请输入用户名!'}
-                        ]
-                    })(<Input/>)}
-                </FormItem>
+            <div className={'login-header'}>
+                <Link to='/person/login'> <Icon type="left"/></Link>
+                <span className={'login'}>注册</span>
 
-                <FormItem {...formItemLayout} label='邮箱'>
-                    {getFieldDecorator('email', {
-                        rules: [
-                            {required: true, message: '请输入邮箱!'},
-                            {type: 'email', message: '输入的邮箱格式不正确!'}
-                        ]
-                    })(<Input/>)}
-                </FormItem>
+            </div>
+            <div className={'reg-body'}>
+                <Form onSubmit={this.handleSubmit}>
+                    <FormItem {...formItemLayout} label='用户名'>
+                        {getFieldDecorator('name', {
+                            rules: [
+                                {required: true, message: '请输入用户名!'}
+                            ]
+                        })(<Input/>)}
+                    </FormItem>
 
-                <FormItem {...formItemLayout} label='手机'>
-                    {getFieldDecorator('phone', {
-                        rules: [
-                            {required: true, message: '请输入手机号!'}
-                        ]
-                    })(<Input/>)}
-                </FormItem>
+                    <FormItem {...formItemLayout} label='邮箱'>
+                        {getFieldDecorator('email', {
+                            rules: [
+                                {required: true, message: '请输入邮箱!'},
+                                {type: 'email', message: '输入的邮箱格式不正确!'}
+                            ]
+                        })(<Input/>)}
+                    </FormItem>
 
-                <FormItem {...formItemLayout} label='密码'>
-                    {getFieldDecorator('password', {
-                        rules: [
-                            {required: true, message: '请输入密码!'}
-                        ]
-                    })(<Input type='password'/>)}
-                </FormItem>
+                    <FormItem {...formItemLayout} label='手机'>
+                        {getFieldDecorator('phone', {
+                            rules: [
+                                {required: true, message: '请输入手机号!'}
+                            ]
+                        })(<Input/>)}
+                    </FormItem>
 
-                <FormItem>
-                    <Button type="primary" htmlType="submit">立即注册</Button>
-                </FormItem>
-            </Form>
+                    <FormItem {...formItemLayout} label='密码'>
+                        {getFieldDecorator('password', {
+                            rules: [
+                                {required: true, message: '请输入密码!'}
+                            ]
+                        })(<Input type='password'/>)}
+                    </FormItem>
+
+                    <FormItem>
+                        <Button type="primary" htmlType="submit">立即注册</Button>
+                    </FormItem>
+                </Form>
+            </div>
         </section>;
     }
 }
