@@ -15,3 +15,4 @@ yarn-error.log*
 
 # webStorm
 .idea
+node_modules
