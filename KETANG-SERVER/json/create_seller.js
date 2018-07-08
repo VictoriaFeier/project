@@ -1,17 +1,17 @@
 let ary = [
 {
   "seller": {
-    "name": "粥品香坊（回龙观）",
-    "description": "美团专送",
-    "deliveryTime": 38,
+    "name": "北京麦当劳昌平鼓楼南街餐厅",
+    "description": "533m",
+    "deliveryTime": 30,
     "score": 4.2,
     "serviceScore": 4.1,
     "foodScore": 4.3,
     "rankRate": 69.2,
-    "minPrice": 20,
-    "deliveryPrice": 4,
+    "minPrice": 0,
+    "deliveryPrice": 9,
     "ratingCount": 24,
-    "sellCount": 90,
+    "sellCount": '999+',
     "bulletin": "粥品香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。",
     "supports": [
       {
@@ -35,7 +35,7 @@ let ary = [
         "description": "已加入“外卖保”计划,食品安全保障"
       }
     ],
-    "avatar": "http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg",
+    "avatar": "http://p0.meituan.net/0.84.63/xianfu/aa86bc1b9a218ea5e094b861c03b59b94873.jpg.webp",
     "pics": [
       "http://fuss10.elemecdn.com/8/71/c5cf5715740998d5040dda6e66abfjpeg.jpeg?imageView2/1/w/180/h/180",
       "http://fuss10.elemecdn.com/b/6c/75bd250e5ba69868f3b1178afbda3jpeg.jpeg?imageView2/1/w/180/h/180",
@@ -1380,17 +1380,17 @@ let ary = [
 },
 {
   "seller": {
-    "name": "全聚德（东大街）",
-    "description": "美团专送",
-    "deliveryTime": 50,
+    "name": "肯德基宅急送(昌平店）",
+    "description": "391m",
+    "deliveryTime": 30,
     "score": 4.2,
     "serviceScore": 4.1,
     "foodScore": 4.3,
     "rankRate": 69.2,
-    "minPrice": 20,
-    "deliveryPrice": 4,
+    "minPrice": 0,
+    "deliveryPrice": 9,
     "ratingCount": 24,
-    "sellCount": 90,
+    "sellCount": '999+',
     "bulletin": "全聚德，中华老字号，创建于1864年（清朝同治三年），历经几代创业拼搏获得了长足发展。1999年1月，“全聚德“被国家工商总局认定为“驰名商标”，是中国第一例服务类中国驰名商标。全聚德烤鸭肉质鲜美，适合许多人吃。",
     "supports": [
       {
@@ -1414,7 +1414,7 @@ let ary = [
         "description": "已加入“外卖保”计划,食品安全保障"
       }
     ],
-    "avatar": "http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg",
+    "avatar": "http://p1.meituan.net/waimaipoi/f49c565f3c4d51fda6c40a29ca6ff05e16938.jpg.webp",
     "pics": [
       "http://fuss10.elemecdn.com/8/71/c5cf5715740998d5040dda6e66abfjpeg.jpeg?imageView2/1/w/180/h/180",
       "http://fuss10.elemecdn.com/b/6c/75bd250e5ba69868f3b1178afbda3jpeg.jpeg?imageView2/1/w/180/h/180",
@@ -2759,17 +2759,17 @@ let ary = [
 },
 {
   "seller": {
-    "name": "云海肴",
-    "description": "",
-    "deliveryTime": 38,
+    "name": "比格比萨（昌平店）",
+    "description": "312m",
+    "deliveryTime": 30,
     "score": 4.2,
     "serviceScore": 4.1,
     "foodScore": 4.3,
     "rankRate": 69.2,
-    "minPrice": 20,
-    "deliveryPrice": 4,
+    "minPrice": 30,
+    "deliveryPrice": 5,
     "ratingCount": 24,
-    "sellCount": 90,
+    "sellCount": '999+',
     "bulletin": "云海肴，是北京心正意诚餐饮有限公司旗下品牌之一，公司创立于2009年10月08号，是四个“80后” [1]  年轻人一起创办的云南菜餐厅。",
     "supports": [
       {
@@ -2793,7 +2793,7 @@ let ary = [
         "description": "已加入“外卖保”计划,食品安全保障"
       }
     ],
-    "avatar": "http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg",
+    "avatar": "http://p0.meituan.net/waimaipoi/2cce23ac6d27752c8f73ebafa9b3170058846.jpg.webp",
     "pics": [
       "http://fuss10.elemecdn.com/8/71/c5cf5715740998d5040dda6e66abfjpeg.jpeg?imageView2/1/w/180/h/180",
       "http://fuss10.elemecdn.com/b/6c/75bd250e5ba69868f3b1178afbda3jpeg.jpeg?imageView2/1/w/180/h/180",
@@ -2801,7 +2801,7 @@ let ary = [
       "http://fuss10.elemecdn.com/6/ad/779f8620ff49f701cd4c58f6448b6jpeg.jpeg?imageView2/1/w/180/h/180"
     ],
     "infos": [
-      "该商家支持发票,请下单写好发票抬头",
+      "无",
       "品类:其他菜系,包子粥店",
       "北京市昌平区回龙观西大街龙观置业大厦底商B座102单元1340",
       "营业时间:10:00-20:30"
