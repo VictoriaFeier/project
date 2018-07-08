@@ -4,18 +4,28 @@ import {Icon} from 'antd';
 import {withRouter,Link} from 'react-router-dom';
 import Login from './Login.js';
 import Info from './Info.js';
+import action from '../../store/action/index';
 class Tip extends React.Component{
     constructor(props,context){
         super(props,context);
     }
+    async componentWillMount(){
+        this.props.queryBaseInfo();
+    }
+
     render(){
+            let {userInfo}=this.props;
         return <div className={'personCenter'}>
+
                     <div className={'personCenter-header'}>
-                        <h3>
-                            <Icon type="user" />
-                            <Link className='pleaceLogin' to='/person/login'>请登录</Link>
-                            <Link to='/person/info'> <Icon type="setting" /></Link>
+                            <h3>
+                                <Icon type="user" />
+                                <Link className='pleaceLogin' to='/person/login'>请登录</Link>
+
                             </h3>
+                       {/* {userInfo ? <span>{userInfo.name}</span> : <Link to={'/person/login'}>
+                            <span>您还未登录！点此登录...</span>
+                        </Link>}*/}
                     </div>
                 <div className={'personCenter-collect'}>
                     <ul className={'collectList'}>
@@ -72,7 +82,7 @@ class Tip extends React.Component{
                     </ul>
                 </div>
             </div>
-            <div className={'personCenter-server'}>
+          {/*  <div className={'personCenter-server'}>
                 <div className={'personCenter-myServer'}>
                     <h3>我的服务</h3>
                     <ul className={'person-myServerList'}>
@@ -87,7 +97,7 @@ class Tip extends React.Component{
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>*/}
             {/*refer*/}
             <div className={'personMore-refer'}>
                 <div className={'moreRefer'}>
@@ -119,4 +129,4 @@ class Tip extends React.Component{
         </div>;
     }
 }
-export default withRouter(connect()(Tip));
+export default withRouter(connect(state => ({...state.person}), action.person)(Tip));
