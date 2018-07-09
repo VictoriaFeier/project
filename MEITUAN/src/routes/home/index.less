@@ -1,0 +1,139 @@
+.homeBox {
+  /*轮播图和列表*/
+  .listBox {
+    width: 100%;
+    //=>轮播图
+    .ant-carousel {
+      height: 3.8rem;
+
+      .slick-slide {
+        height: 3.8rem;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .slick-active {
+        button {
+          background: #F3C14D !important;
+        }
+      }
+    }
+
+    //=>分类
+    .sort {
+      margin-top: .3rem;
+      border-bottom: .3rem solid rgba(0, 0, 0, .05);
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        padding-top: .1rem;
+        img {
+          display: block;
+          width: 50%;
+          height: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    //=>商家列表
+    .moreSeller {
+      padding-bottom: 1.3rem;
+      h2 {
+        color: #595959;
+        font-weight: bold;
+        margin: .5rem 0 0 .3rem;
+        font-size: .4rem;
+      }
+
+      .sellerList {
+        background: #fff;
+        padding: 0 .1rem;
+        li {
+          padding: .3rem 0 .1rem;
+          border-bottom: .01rem solid #cccccc;
+          .sellerLeft{
+            position: relative;
+            img {
+              float: left;
+              width: 2rem;
+              margin-left: .1rem;
+              border:.02rem solid #cccccc;
+            }
+            span{
+              display: block;
+              position: absolute;
+              left: 1.85rem;
+              top: 1.23rem;
+              width: .3rem;
+              height: .3rem;
+              line-height: .3rem;
+              background: #FB4E44;
+              text-align: center;
+              color: #FFF;
+              border-radius: 50%;
+              font-size: .12rem;
+            }
+          }
+
+          .sellerRight {
+            float: right;
+            width: 4.5rem;
+            margin-right: .5rem;
+            color: #595959;
+            h3 {
+              font-size: .3rem;
+            }
+            span {
+              font-size: .2rem;
+              &:nth-of-type(3) {
+                margin-left: .8rem;
+              }
+              &:nth-of-type(6) {
+                margin-right: .2rem;
+              }
+              &:nth-of-type(8) {
+                margin-left: .2rem;
+              }
+            }
+            .star {
+              color: #F3C14D;
+            }
+            p {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              margin-top: .2rem;
+
+              .piao {
+                margin-top: .06rem;
+                width: .3rem;
+                margin-left: 0rem;
+              }
+            }
+          }
+
+        }
+      }
+      .noMore {
+        text-align: center;
+        button {
+          display: block;
+          margin: 0 auto;
+          border-color: #fff;
+          color: #3490F3;
+        }
+      }
+
+    }
+  }
+}

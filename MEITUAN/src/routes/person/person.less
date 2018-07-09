@@ -1,0 +1,307 @@
+.personCenter{
+  background: #f7f7f7;
+  height:15rem;
+  .personCenter-header{
+        height:2rem;
+        background:#ffe32b;
+        width:100%;
+    h3{
+
+      padding:0.7rem 0.5rem;
+      .anticon-user{
+        position:relative;
+        font-size:0.6rem;
+      }
+      .pleaceLogin{
+        position:absolute;
+        top:0.8rem;
+        left:1.1rem;
+        color: #0a0000;
+      }
+      .anticon-setting{
+        float:right;
+        font-size: 0.4rem;
+        margin-top:0.1rem;
+      }
+    }
+  }
+  //collect
+  .personCenter-collect{
+    margin-bottom:0.2rem;
+    //padding:0.2rem 0.5rem 0 0.5rem;
+    padding: 0 0.4rem;
+    height:2.5rem;
+    width:100%;
+    background:#fff;
+    .collectList{
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      .anticon-environment-o,.anticon-team,.anticon-flag,.anticon-like-o,.anticon-solution,.anticon-book{
+        font-size: .45rem;
+        color:orange;
+        //margin-left: 0.25rem;
+      }
+      span{
+        display:block;
+        color:#343434;
+        font-size:0.2rem;
+      }
+      li{
+        //flex:2;
+        flex: 0 0 25%;
+        float:left;
+        margin-top:0.2rem;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+  }
+//  asset
+  .personCenter-asset,.personCenter-server{
+    padding:0 0.3rem 0 0.4rem;
+    height:2.7rem;
+    background:#FFFFFF;
+    margin-bottom:0.2rem;
+    .personCenter-myAsset,.personCenter-myServer{
+      h3{
+        padding:0.15rem 0;
+        border-bottom:1px solid #D5D5D5;
+      }
+      .person-myAsstList,.person-myServerList{
+        display:flex;
+        display:-webkit-flex;
+        flex-direction:row;
+
+        li{
+          flex:0 0 25%;
+          float:left;
+          margin-top:0.15rem;
+          box-sizing: border-box;
+          text-align: center;
+          .anticon-red-envelope,.anticon-printer,.anticon-wallet,.anticon-pay-circle-o{
+            font-size: .45rem;
+            color:orange;
+          }
+          span{
+            display:block;
+            color:#333;
+            font-size:0.2rem;
+          }
+          p{
+            color:#666;
+            font-size:0.15rem;
+          }
+        }
+      }
+    }
+  }
+//server
+  .personCenter-server{
+    height:2.1rem;
+    .person-myServerList{
+      .anticon-customer-service,.anticon-heart-o{
+        font-size: .45rem;
+        color:orange;
+      }
+    }
+  }
+
+
+//refer
+  .personMore-refer{
+    margin-bottom:0.2rem;
+    padding: 0 0.4rem;
+    height:2.2rem;
+    width:100%;
+    background:#fff;
+    .moreRefer{
+      h3{
+        padding:0.15rem 0;
+        border-bottom:1px solid #D5D5D5;
+      }
+      .personMoreList{
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        li{
+          flex: 0 0 25%;
+          float:left;
+          margin-top:0.2rem;
+          box-sizing: border-box;
+          text-align: center;
+          span{
+            display:block;
+            color:#333;
+            font-size:0.2rem;
+          }
+          .anticon-dribbble,.anticon-gift,.anticon-shop,.anticon-dribbble,.anticon-usergroup-add{
+            font-size: .45rem;
+            color:orange;
+          }
+        }
+      }
+    }
+  }
+  .info-quit{
+    padding: 0 0.4rem;
+    text-align:center;
+    margin:0 auto;
+    button{
+      width:60%;
+      height: 0.8rem;
+      background-color: #ff2521;
+      border: none;
+      outline: none;
+    }
+  }
+}
+//美团外卖登录
+.meiTuan-login{
+  .login-header{
+    height:1rem;
+    width:100%;
+    background:#F3F3F3;
+    padding:0 0.4rem ;
+    line-height:1rem;
+    text-align:center;
+    .anticon-left{
+      float:left;
+      line-height: 1rem;
+      font-size: 0.34rem;
+      color:#000;
+    }
+    .login{
+      font-size:0.34rem;
+      text-align: center;
+      color:#000;
+    }
+    .regi{
+      float:right;
+      font-size:0.34rem;
+      color:#000;
+    }
+  }
+  .login-body{
+    padding:0.6rem 0.4rem;
+    margin:0 auto;
+    .userNameBox,.passNameBox{
+      border:0.02rem solid #dfdfdf;
+      margin-bottom:0.4rem;
+      padding:0.2rem 0.2rem;
+      input{
+        outline:none;
+        border:none;
+        height:0.6rem;
+        font-size: 0.25rem;
+        color:#666;
+        padding-left: 0.2rem;
+      }
+      span{
+        font-size: 0.4rem;
+      }
+    }
+    button{
+      height:0.8rem;
+      line-height:0.8rem;
+      text-align:center;
+      background-color: #ffe32b;
+      color: #343434;
+      width: 6.7rem;
+      border: none;
+      border-radius:5px;
+      font-size:0.35rem;
+    }
+  }
+}
+//美团注册
+.meiTuan-reg{
+  .reg-header{
+    height:1rem;
+    width:100%;
+    background:#F3F3F3;
+    padding:0 0.4rem ;
+    line-height:1rem;
+    text-align:center;
+    .anticon-left{
+      float:left;
+      line-height: 1rem;
+      font-size: 0.34rem;
+      color:#000;
+    }
+    .reg{
+      font-size:0.34rem;
+      text-align: center;
+      color:#000;
+    }
+  }
+  .reg-body{
+    padding:0.6rem 0.4rem;
+
+    .reg-userName,.reg-Email,.reg-phone,.reg-password{
+      border:0.02rem solid #dfdfdf;
+      margin-bottom:0.4rem;
+      padding:0.2rem 0.2rem;
+      input{
+        outline:none;
+        border:none;
+        height:0.6rem;
+        font-size: 0.25rem;
+        color:#666;
+        padding-left: 0.2rem;
+      }
+      span{
+        font-size: 0.4rem;
+      }
+    }
+    button{
+      height:0.8rem;
+      line-height:0.8rem;
+      text-align:center;
+      background-color: #ffe32b;
+      color: #000;
+      width: 6.7rem;
+      border: none;
+      border-radius:5px;
+    }
+  }
+}
+
+//注册
+.personLoginBox {
+  .login-header{
+    height:1rem;
+    width:100%;
+    background:#F3F3F3;
+    padding:0 0.4rem ;
+    line-height:1rem;
+    text-align:center;
+    .anticon-left{
+      float:left;
+      line-height: 1rem;
+      font-size: 0.34rem;
+      color:#000;
+    }
+    .login{
+      font-size:0.34rem;
+      text-align: center;
+      color:#000;
+    }
+    .regi{
+      float:right;
+      font-size:0.34rem;
+      color:#000;
+    }
+  }
+  .reg-body{
+    padding:0.4rem;
+    .ant-btn-primary{
+      background-color: #ffd518;
+      border-color: #ffd518;
+      color: #100709;
+    }
+  }
+
+}

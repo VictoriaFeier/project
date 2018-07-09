@@ -1,0 +1,1 @@
+[{"id":1,"personID":1,"sellerID":"1","sellerInfo":{"totalPrice":"20","totalNum":"2","type":[{"name":"皮蛋瘦肉粥","num":"2","price":"10"}],"deliveryTime":"38"},"state":1,"time":1531053970713},{"id":2,"personID":1,"sellerID":"1","sellerInfo":{"totalPrice":"20","totalNum":"2","type":[{"name":"皮蛋瘦肉粥","num":"2","price":"10"}],"deliveryTime":"20"},"state":1,"time":1531104873035}]
