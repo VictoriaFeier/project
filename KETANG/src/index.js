@@ -43,7 +43,7 @@ ReactDOM.render(
                         </Switch>
                     </main>
                     {/*FOOTER*/}
-                    {/*<NavBottom/>*/}
+                    <NavBottom/>
                 </div>
             </LocaleProvider>
         </HashRouter>

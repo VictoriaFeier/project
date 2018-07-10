@@ -32,7 +32,6 @@ let detail = {
             obj
         }
     }
-
 };
 
 export default detail;

@@ -72,32 +72,32 @@ class List extends React.Component {
                     <p>美食</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p0.meituan.net/jungle/45ff2f098a20a77122bff8385192f0ec10547.png" alt=""/>
+                    <p>美团超市</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p1.meituan.net/jungle/12a9834827909fa55f54bce96e67470711250.png" alt=""/>
+                    <p>生鲜果蔬</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p1.meituan.net/jungle/da9181f93dd2e11c5d74cf685470408f10016.png" alt=""/>
+                    <p>美团专送</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p1.meituan.net/jungle/a2a306c5467aba7fac8d7410d161f8db9364.png" alt=""/>
+                    <p>下午茶</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p0.meituan.net/jungle/58b60a312cf86f3a3afc4c96ff0e53438774.png" alt=""/>
+                    <p>汉堡披萨</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p0.meituan.net/jungle/2ec76f8f4f21a4ec163adc7fccfa1a399428.png" alt=""/>
+                    <p>小吃馆</p>
                 </li>
                 <li>
-                    <img src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" alt=""/>
-                    <p>美食</p>
+                    <img src="http://p0.meituan.net/jungle/2eee7747fd143249b100b9fa5ee5e31d9873.png" alt=""/>
+                    <p>家常菜</p>
                 </li>
             </ul>
 
@@ -112,7 +112,11 @@ class List extends React.Component {
                             return <li className="clearfix" key={index}>
                                 <Link to={{pathname:'/home/list',
                         search:`?listId=${item.id}`}}>
-                                    <img src={item.seller.avatar} alt=""/>
+                                    <div className="sellerLeft"><img src={item.seller.avatar} alt=""/>
+                                        {this.props.cat[item.id]?<span>{this.props.cat[item.id]["totalNum"]}</span>:
+                                            null}
+                                    </div>
+
                                     <div className="sellerRight">
                                         <h3>{item.seller.name}</h3>
                             <span className="star">
@@ -154,4 +158,4 @@ class List extends React.Component {
     }
 }
 
-export default connect(state => ({...state.home}), action.home)(List);
+export default connect(state => ({...state.home,...state.detail}), action.home)(List);
