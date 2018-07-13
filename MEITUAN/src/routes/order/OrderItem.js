@@ -9,6 +9,7 @@ class OrderItem extends React.Component {
 
     render() {
         console.log(this.props.data);
+        if(this.props.data.length===0) return "没有订单哦~"
         return <ul>
             {
                 this.props.data.map((item,index)=>{
@@ -55,4 +56,4 @@ class OrderItem extends React.Component {
         </ul>
     }
 }
-export default connect(state=>({...state.order}),action.order)(OrderItem);
+export default connect(null,action.detail)(OrderItem);

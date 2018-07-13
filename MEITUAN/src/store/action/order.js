@@ -1,4 +1,4 @@
-import * as TYPES from "../action-types";
+/*import * as TYPES from "../action-types";
 import {getOrderInfo} from "../../api/order"
 
 let order = {
@@ -10,4 +10,4 @@ let order = {
     }
 };
 
-export default order;
+export default order;*/

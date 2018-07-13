@@ -8,7 +8,7 @@ export const SET_DETAIL_CAT_DATA = "SET_DETAIL_CAT_DATA";
 export const SET_DETAIL_CAT_ALL_DATA = "SET_DETAIL_CAT_ALL_DATA";
 
 //订单
-export const GET_ORDER_INFO="GET_ORDER_INFO";
+//export const GET_ORDER_INFO="GET_ORDER_INFO";
 
 //注册&登录
 export const PERSON_QUERY_BASE = 'PERSON_QUERY_BASE';

@@ -33,7 +33,7 @@ route.post('/commit', (req, res) => {
 
 
 route.post('/pay', (req, res) => {
-    let {sellerID,sellerInfo} = req.body,
+    let {sellerID,sellerName,sellerAvatar,sellerInfo} = req.body,
         personID = req.session.personID;
     
     if(personID){
@@ -41,6 +41,8 @@ route.post('/pay', (req, res) => {
             id: req.orderDATA.length === 0 ? 1 : (parseFloat(req.orderDATA[req.orderDATA.length - 1].id) + 1),//=>ID自增长
             personID,
             sellerID,
+            sellerName,
+            sellerAvatar,
             sellerInfo,//须多一个配送时间
             state: 1,//=>默认是订单还没送达
             time: new Date().getTime()
@@ -79,6 +81,8 @@ route.get('/info', (req, res) => {
                 if(state==0||state==item.state){
                     let sellerInfo = {
                         sellerID:item.sellerID,
+                        sellerName:item.sellerName,
+                        sellerAvatar:item.sellerAvatar,
                         state:item.state,
                         time:item.time,
                         sellerInfo:item.sellerInfo

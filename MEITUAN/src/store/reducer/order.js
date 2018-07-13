@@ -1,4 +1,4 @@
-import * as TYPES from "../action-types";
+/*import * as TYPES from "../action-types";
 
 let init_data = {
 	orderInfo:[]
@@ -11,4 +11,4 @@ export default function order(state=init_data,action){
 			break;
     }
 	return state;
-}
+}*/
