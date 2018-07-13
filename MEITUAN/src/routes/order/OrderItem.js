@@ -9,18 +9,46 @@ class OrderItem extends React.Component {
     }
 
     toM = ms=>{
-
-        ms = Math.floor(ms/1000);
+        return Math.floor(ms/1000/60)+" min";
+        /*ms = Math.floor(ms/1000);
         let m = Math.floor(ms/60);
         let s = ms%60;
-        return m + " : " + (s+"").padStart(2,"0");
+        return m + " : " + (s+"").padStart(2,"0");*/
     }
 
-    /*addTimer = ms=>{
-        if()
+    /*addTimer = (index,ms)=>{
+        if(!this.timer){
+            this.pops={};
+            this.timer=setInterval(this.handlerTimer,1000);
+
+        }
+        if(this.pops[index]){
+            return this.toM(this.state[index]);
+        }else{
+            this.pops[index] = ms;
+            return this.toM(ms);
+        }        
     }
 
-    componentWillUnmount(){
+    handlerTimer = ()=>{
+        let names = Object.getOwnPropertyNames(this.pops);
+        if(names.length===0){
+            this.clearTimer();
+            return;
+        }
+        for(let i=0,l=names.length;i<l;i++){
+
+        }
+    }
+
+    clearTimer = ()=>{
+        if(this.timer){
+            clearInterval(this.timer);
+            this.timer=null;
+        }
+    }*/
+
+    /*componentWillUnmount(){
         if(this.timer){
             clearInterval(this.timer);
             this.timer=null;
