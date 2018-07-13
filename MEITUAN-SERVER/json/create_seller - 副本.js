@@ -5517,13 +5517,8 @@ let ary = [
   }];
 
 let result = [];
-let prevn = -1;
 for(let i = 1;i<30;i++){
-    let n;
-    do{
-      n = Math.floor(Math.random()*4);
-    }while(n==prevn)
-    prevn = n;
+    let n = Math.floor(Math.random()*4);
     let item = JSON.parse(JSON.stringify(ary[n]));
     item = {id:i,...item};
     result.push(item);

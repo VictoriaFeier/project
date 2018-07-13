@@ -35,7 +35,7 @@ export default class ShopCart extends React.Component{
         }} style={{display:"none"}}></div>
         <div>
             <div className="scrollTop">
-                <div className="icon">
+                <div className={this.isEmpty?"icon":"icon active"}>
                     <Icon type="shopping-cart" onClick={ev=>{
                         if(this.isEmpty){
                             return;
@@ -58,7 +58,7 @@ export default class ShopCart extends React.Component{
                         <span>购物车空空如也~</span>:
                         <span>{`￥${info.totalPrice}`}</span>}
                     
-                    {this.isBeyond?
+                    {this.isBeyond&&info.totalPrice>0?
                         <button onClick={()=>{
                             this.props.pay();
                         }}>立即购买</button>:

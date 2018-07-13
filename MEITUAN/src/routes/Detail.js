@@ -169,7 +169,7 @@ class Detail extends React.Component{
                                foodInfo={detailInfoData.item}/>:
             <div>
             <header className="detailTop">
-                <Icon type="left" onClick={ev=>{this.props.history.go(-1)}}/>
+                <Icon type="left" onClick={ev=>{this.props.history.push("/home")}}/>
                 <span>{this.state.seller.name}</span>
             </header>
             <div className="detailNav"><h3>点菜</h3></div>

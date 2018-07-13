@@ -8,8 +8,27 @@ class OrderItem extends React.Component {
         super(props);
     }
 
+    toM = ms=>{
+
+        ms = Math.floor(ms/1000);
+        let m = Math.floor(ms/60);
+        let s = ms%60;
+        return m + " : " + (s+"").padStart(2,"0");
+    }
+
+    /*addTimer = ms=>{
+        if()
+    }
+
+    componentWillUnmount(){
+        if(this.timer){
+            clearInterval(this.timer);
+            this.timer=null;
+        }
+    }*/
+
     render() {
-        console.log(this.props.data);
+        // console.log(this.props.data);
         if(this.props.data.length===0) return "没有订单哦~"
         return <ul>
             {
@@ -23,7 +42,7 @@ class OrderItem extends React.Component {
                             <a className="field-head-name" href="javascript:;" onClick={()=>{
                                 this.props.history.push(`/seller/${item.sellerID}`);
                             }}>{item.sellerName}</a>
-                            <span className="field-head-status">{item.state===0?"订单完成":item.state===1?"未完成":"已完成"}</span>
+                            <span className="field-head-status">{item.state===0?"订单完成":item.state===1?this.toM(item.remainderTime):"已完成"}</span>
                         </div>
                         <a className="field-item clearfix" href="javascript:;" key={index}>
                             <ul className="content">

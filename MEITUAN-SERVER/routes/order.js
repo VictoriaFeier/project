@@ -100,7 +100,7 @@ route.get('/info', (req, res) => {
                 res.send({
                     code: 0,
                     msg: 'OK!',
-                    data:sellerInfos
+                    data:sellerInfos.reverse()
                 });
             }).catch(()=>{
                 res.send({code: 1, msg: 'NO LOGIN!'});
@@ -109,7 +109,7 @@ route.get('/info', (req, res) => {
             res.send({
                 code: 0,
                 msg: 'OK!',
-                data:sellerInfos
+                data:sellerInfos.reverse()
             });
         }
         return;
