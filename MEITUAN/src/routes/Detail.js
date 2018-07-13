@@ -113,6 +113,8 @@ class Detail extends React.Component{
 
             let data = {
                 sellerID: this.sellerID,
+                sellerName:this.state.seller.name,
+                sellerAvatar:this.state.seller.avatar,
                 sellerInfo: {
                     ...this.props.cat[this.sellerID],
                     deliveryTime:this.state.seller.deliveryTime

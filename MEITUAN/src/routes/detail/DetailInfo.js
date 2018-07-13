@@ -8,23 +8,25 @@ export default class DetailInfo extends React.Component{
     }
 
     render(){
+        console.log(this.props.foodInfo);
+        let {foodInfo}=this.props;
         return <section className="detailInfoBox">
             <header className="detailInfoTop">
                 <Icon type="left" onClick={ev=>{
                     this.props.clearDetailInfoName();
                 }}/>
-                <span>炸鸡排</span>
+                <span>{foodInfo.name}</span>
             </header>
             <Plus foodInfo={this.props.foodInfo} add={this.props.add} minus={this.props.minus} num={this.props.num}/>
             <div className="detailInfoBody">
-                <img src="" alt=""/>
+                <img src={foodInfo.image} alt=""/>
                 <div className="relativeDIv">
-                    <h3>炸鸡排</h3>
+                    <h3>{foodInfo.name}</h3>
                     <br/>
-                    <span>月售1000份</span>
-                    <span>好评率100%</span>
-                    <h3>商品介绍</h3>
-                    <p>炸鸡排，炸鸡排，炸大鸡排，炸大鸡排，炸大鸡排，炸大鸡排，炸大鸡排，炸大鸡排，炸大鸡排，炸大鸡排</p>
+                    <span>月售{foodInfo.sellCount}份</span>
+                    <span>好评率{foodInfo.rating}%</span>
+                    <h3>{foodInfo.description}</h3>
+
                 </div>
             </div>
             {/*<ShopCart/>*/}
