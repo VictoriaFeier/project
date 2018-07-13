@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import action from "../../store/action/index";
 import {getOrderInfo} from "../../api/order";
+import {withRouter} from "react-router-dom";
 class OrderItem extends React.Component {
     constructor(props) {
         super(props);
@@ -19,9 +20,9 @@ class OrderItem extends React.Component {
                                 <img src={item.sellerAvatar}
                                      className="avatar-img"/>
                             </div>
-                            <a className="field-head-name" href="javascript:;" onClick={
-                                ()=>{}
-                            }>{item.sellerName}</a>
+                            <a className="field-head-name" href="javascript:;" onClick={()=>{
+                                this.props.history.push(`/seller/${item.sellerID}`);
+                            }}>{item.sellerName}</a>
                             <span className="field-head-status">{item.state===0?"订单完成":item.state===1?"未完成":"已完成"}</span>
                         </div>
                         <a className="field-item clearfix" href="javascript:;" key={index}>
@@ -47,8 +48,17 @@ class OrderItem extends React.Component {
 
                         <div className="field-console">
                             <div className="field-console-btns">
-                                <button>
-                                    {item.state===1?"立即支付":"再来一单"}
+                                <button onClick={()=>{
+                                    // console.log(item.sellerInfo);
+                                    let info = {...item.sellerInfo};
+                                    delete info.deliveryTime;
+                                    this.props.setDetailCatDataAPI({
+                                        id:item.sellerID,
+                                        info
+                                    });
+                                    this.props.history.push(`/seller/${item.sellerID}`);
+                                }}>
+                                    再来一单
                                 </button>
                             </div>
                         </div>
@@ -58,4 +68,4 @@ class OrderItem extends React.Component {
         </ul>
     }
 }
-export default connect(null,action.detail)(OrderItem);
+export default withRouter(connect(null,action.detail)(OrderItem));
