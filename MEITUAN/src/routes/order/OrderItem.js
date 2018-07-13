@@ -16,10 +16,12 @@ class OrderItem extends React.Component {
                     return  <li className="field" key={index}>
                         <div className="field-head">
                             <div className="avatar">
-                                <img src="http://p1.meituan.net/waimaipoi/94ad1e93db03c81974375716cf61ec66636116.jpg"
+                                <img src={item.sellerAvatar}
                                      className="avatar-img"/>
                             </div>
-                            <a className="field-head-name" href="/seller">{item.sellerID}</a>
+                            <a className="field-head-name" href="javascript:;" onClick={
+                                ()=>{}
+                            }>{item.sellerName}</a>
                             <span className="field-head-status">{item.state===0?"订单完成":item.state===1?"未完成":"已完成"}</span>
                         </div>
                         <a className="field-item clearfix" href="javascript:;" key={index}>
